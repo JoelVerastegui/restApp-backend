@@ -29,4 +29,4 @@ process.env.token_seed = process.env.token_seed || 'secret-seed';
 //////////////////////////////////////
 //  DATABASE
 //////////////////////////////////////
-process.env.urlDB = process.env.node_env === 'dev' ? 'mongodb://localhost:27017/cafe' : proccess.env.mongoURI;
+process.env.urlDB = process.env.node_env === 'dev' ? 'mongodb://localhost:27017/cafe' : process.env.mongoURI;
