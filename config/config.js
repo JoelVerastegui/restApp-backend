@@ -13,6 +13,13 @@ process.env.node_env = process.env.node_env || 'dev';
 
 
 //////////////////////////////////////
+//  DATABASE
+//////////////////////////////////////
+process.env.urlDB = process.env.node_env === 'dev' ? 'mongodb://localhost:27017/cafe' : process.env.mongoURI;
+
+
+
+//////////////////////////////////////
 //  JWT DURATION
 //////////////////////////////////////
 process.env.token_expiresIn = 60 * 5; // 5 minutes
@@ -23,10 +30,3 @@ process.env.token_expiresIn = 60 * 5; // 5 minutes
 //  JWT SEED
 //////////////////////////////////////
 process.env.token_seed = process.env.token_seed || 'secret-seed';
-
-
-
-//////////////////////////////////////
-//  DATABASE
-//////////////////////////////////////
-process.env.urlDB = process.env.node_env === 'dev' ? 'mongodb://localhost:27017/cafe' : process.env.mongoURI;
