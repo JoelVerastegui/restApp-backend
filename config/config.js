@@ -1,7 +1,7 @@
 //////////////////////////////////////
 //  PORT
 //////////////////////////////////////
-process.env.port = process.env.port || 4000;
+process.env.PORT = process.env.PORT || 4000;
 
 
 
