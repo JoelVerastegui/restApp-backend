@@ -15,7 +15,7 @@ process.env.node_env = process.env.node_env || 'dev';
 //////////////////////////////////////
 //  DATABASE
 //////////////////////////////////////
-process.env.urlDB = process.env.node_env === 'dev' ? 'mongodb://localhost:27017/cafe' : process.env.mongoURI;
+// process.env.urlDB = process.env.node_env === 'dev' ? 'mongodb://localhost:27017/cafe' : process.env.mongoURI;
 
 
 
